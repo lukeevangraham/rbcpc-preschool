@@ -5,6 +5,8 @@
   height: 10vh;
 }
 
+/* MAIN NAV */
+
 .main-nav {
   list-style: none;
 }
@@ -28,4 +30,16 @@
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #95e5b5;
+}
+
+
+/* MOBILE NAV */
+.mobile-nav-icon {
+  display:none;
+  cursor: pointer;
+}
+
+.mobile-nav-icon ion-icon {
+  font-size: 200%;
+  color: white;
 }
