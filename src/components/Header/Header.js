@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-
 const Header = () => {
   const [open, setOpen] = useState(false);
   const ref = useRef();
@@ -42,7 +41,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div className="row container">
+        <div className="container">
           RBCPC Preschool
           <ul className="main-nav js--main-nav">
             <li>

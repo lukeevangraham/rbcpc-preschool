@@ -1,7 +1,7 @@
 /* Big tablet to 1200 (width smaller than the 1140 pixel row) */
 
 @media only screen and (max-width: 1200px) {
-    .row {
+    .row, .container {
         padding: 0 2%;
     }
 }
@@ -26,7 +26,7 @@
     section {
         padding: 30px 0;
     }
-    .row {
+    .row, .container {
         padding: 0 4%
     }
     .col {
@@ -45,7 +45,7 @@
     }
     .main-nav {
         /* float: left; */
-        margin-top: 75px;
+        margin-top: 100px;
         margin-left: 10px
     }
     .main-nav li {

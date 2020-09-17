@@ -1,6 +1,12 @@
 .postWave {
     background-color: white;
-    height: 500px;
     color: black;
     text-align: center;
+}
+
+.dispFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
