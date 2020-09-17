@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff3cb65448dadfd28d17f56ab89aad46",
+    "revision": "25f6652623728756c97b949deee11eca",
     "url": "/rbcpc-preschool/index.html"
   },
   {

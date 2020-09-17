@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rbcpc-preschool/precache-manifest.532a8f62af701bfa149f4527ad78bd13.js"
+  "/rbcpc-preschool/precache-manifest.9bb8b22c4feb0c67f721ce05844b9b9d.js"
 );
 
 self.addEventListener('message', (event) => {
