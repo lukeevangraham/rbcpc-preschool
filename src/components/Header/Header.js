@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const ref = useRef();
@@ -9,7 +10,6 @@ const Header = () => {
   let onNavMenuClick = () => {
     let container = document.querySelector(".js--main-nav");
     setOpen(!open);
-    console.log(container.classList.value);
     if (!container.classList.contains("active")) {
       container.classList.add("active");
       container.style.height = "auto";
@@ -28,6 +28,7 @@ const Header = () => {
         "transitionend",
         function () {
           container.classList.remove("active");
+          container.style.height = null;
         },
         {
           once: true,
