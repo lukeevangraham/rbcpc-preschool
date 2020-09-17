@@ -1,0 +1,14 @@
+/* .wave-section::after {
+    content: ".";
+    background-color: white;
+    height: 400px;
+    width: 100%;
+    z-index: 300;
+} */
+
+.postWave {
+    background-color: white;
+    height: 500px;
+    color: black;
+    text-align: center;
+}
