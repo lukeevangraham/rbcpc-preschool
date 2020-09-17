@@ -1,18 +1,40 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import $ from "jquery";
 import "./style.css";
 
 const Header = () => {
-  // let navIcon = 'menu-outline'
-
-  let onNavMenuClick = () => {
-    setOpen(!open);
-    $(".js--main-nav").slideToggle(200);
-  };
-
   const [open, setOpen] = useState(false);
   const ref = useRef();
+
+  let onNavMenuClick = () => {
+    let container = document.querySelector(".js--main-nav");
+    setOpen(!open);
+    console.log(container.classList.value);
+    if (!container.classList.contains("active")) {
+      container.classList.add("active");
+      container.style.height = "auto";
+
+      let height = container.clientHeight + "px";
+
+      container.style.height = "0px";
+
+      setTimeout(function () {
+        container.style.height = height;
+      }, 0);
+    } else {
+      container.style.height = "0px";
+
+      container.addEventListener(
+        "transitionend",
+        function () {
+          container.classList.remove("active");
+        },
+        {
+          once: true,
+        }
+      );
+    }
+  };
 
   useEffect(() => {}, []);
 

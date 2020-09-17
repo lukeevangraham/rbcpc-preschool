@@ -34,23 +34,40 @@
         margin: 0 0 4% 0;
     }
     .main-nav {
+        transition: height .25s ease;
+        overflow: hidden;
+    }
+    .main-nav:not(.active) {
         display: none;
     }
     .mobile-nav-icon {
         display: inline-block;
     }
     .main-nav {
-        float: left;
+        /* float: left; */
         margin-top: 75px;
         margin-left: 10px
     }
     .main-nav li {
-        display: block
+        display: block;
     }
-    .main-nav li a:link, main-nav li a:visited {
+    .main-nav li a:link, .main-nav li a:visited {
         display: block;
         border: 0;
         padding: 5px 0;
         font-size: 100%;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+}
+
+/* SMALL PHONES: FROM 0 TO 480px */
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 25px 0;
     }
 }
