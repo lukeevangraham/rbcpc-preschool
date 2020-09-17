@@ -6,43 +6,51 @@
     }
 }
 
-
 /* Small tablet to big tablet: 768px to 1023px */
 
 @media only screen and (max-width: 1023px) {
     body {
         font-size: 18px;
     }
-
     section {
         padding: 60px 0;
     }
 }
 
 /* SMALL PHONES TO SMALL TABLETS: FROM 481px TO 767px */
+
 @media only screen and (max-width: 767px) {
     body {
         font-size: 16px;
     }
-
     section {
         padding: 30px 0;
     }
-
     .row {
         padding: 0 4%
     }
-
     .col {
         width: 100%;
         margin: 0 0 4% 0;
     }
-
     .main-nav {
         display: none;
     }
-
     .mobile-nav-icon {
         display: inline-block;
+    }
+    .main-nav {
+        float: left;
+        margin-top: 75px;
+        margin-left: 10px
+    }
+    .main-nav li {
+        display: block
+    }
+    .main-nav li a:link, main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 5px 0;
+        font-size: 100%;
     }
 }
